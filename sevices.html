@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="tourism web page">
+    <title>Login</title>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="css/services.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function validateForm() {
+        let x , y ;
+        x = document.forms["myform"]["email"].value;
+        y = document.forms["myform"]["password"].value;
+        if (x == "") {
+          alert("email must be filled out");
+          return false;}
+        if (y == "") {
+          alert("password must be filled out");
+          return false;}
+      }
+      function side_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }  
+      function side_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="import">
+      <div class="search">
+       <span class="search-icon material-symbols-outlin">search</span>
+        <input class="search-input" type="search" placeholder="search">
+      </div>
+        <a href="home.html" target="_parent" id="home">Travel</a>
+        <a href="sevices.html" target="_parent" id="linkLog">Log in & Sign up</a>
+       <div class="sidebar1" style="display: none;" id="mySidebar">
+        <button onclick="side_close()" class="close">close &times;</button>
+        <ul id="side">
+          <li class="link"><a href="alex.html" target="_parent" class="boors">Alexandria</a> </li>
+          <li class="link"><a href="cairo.html" target="_parent" class="boors">Cairo</a> </li>
+          <li class="link"><a href="Aswan.html" target="_parent" class="boors">Aswan</a> </li>
+          <li class="link"><a href="gouna.html" target="_parent" class="boors">Gouna</a> </li>
+          <li class="link"><a href="luxor.html" target="_parent" class="boors">Luxor</a> </li>
+        </ul>
+       </div>
+       <div class="sidebar2l">
+        <button class="open" onclick="side_open()">☰</button>
+       </div>
+      </div>
+      <div class="login">
+        <h2 id="wel1">Welcome back !</h2>
+        <h3 id="wel2">Log in to enjoy your tour.</h3>
+       <form  name ="myform" action="/action_page.php" onsubmit="return validateForm()"  method="post">
+         <label for="email">Email</label>
+         <br>
+         <input type="email" id="email" name="email" placeholder="Email" >
+         <br>
+         <label for="pass">password</label>
+         <br>
+         <input type="password" id="pass" name="password" placeholder="password"  minlength="8" maxlength="15">
+         <br>
+         <input type="submit" value="Submit">
+       </form>
+      </div>
+      <div class="signup">
+        <h2 id="join1">Sign up</h2>
+        <h3 id="join2">join us to start the journey.</h3>
+        <form action="/action_page.php">
+          <label for="firstname">Firstname</label>
+         <br>
+         <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+         <br>
+         <label for="secondname">Second name</label>
+         <br>
+         <input type="text" id="secondname" name="second name" placeholder="Second name" required>
+         <br>
+         <label for="email">Email</label>
+         <br>
+         <input type="email" id="email" name="email" placeholder="Email" required>
+         <br>
+         <label for="passsign">Password</label>
+         <br>
+         <input type="password" id="passsign" name="password" placeholder="Password" required minlength="8" maxlength="15">
+         <br>
+         <label for="conpass">Confirm password</label>
+         <br>
+         <input type="password" id="conpass" name="confirm password" placeholder="Confirm password" required minlength="8" maxlength="15">
+         <br>
+         <label for="date">Birth date</label>
+         <br>
+         <input type="date">
+         <br>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+        </form>
+      </div>
+      <footer id="footer" class="footer">
+        <a class="foot" href="home.html" id="logo">Travel</a>
+        <h3 class="footh">Explore Other Cities within Egypt:</h3>
+        <ul>
+            <a href="cairo.html">Cairo</a>
+            <a href="Aswan.html">Aswan</a>
+            <a href="alex.html">Alexandria</a>
+            <a href="gouna.html">Gouna</a>
+            <a href="luxor.html">Luxor</a>
+        </ul> 
+      </footer>
+    </body>
+</html>

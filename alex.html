@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="tourism web page">
+    <title>Alexandria</title>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="css/alex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function side_open() {
+        console.log("Opening sidebar");
+      }
+      function side_open() {
+       document.getElementById("mySidebar").style.display = "block";
+      } 
+      function side_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="import">
+     <div class="search">
+      <span class="search-icon material-symbols-outlin">search</span>
+      <input class="search-input" type="search" placeholder="search">
+     </div>
+      <a href="home.html" target="_parent" id="home">Travel</a>
+        <a href="sevices.html" target="_parent" id="linkLog">Log in & Sign up</a>
+        <div class="sidebar1" style="display: none;" id="mySidebar">
+        <button onclick="side_close()" class="close">close &times;</button>
+        <ul id="side">
+          <li class="link"><a href="alex.html" target="_parent" class="boors">Alexandria</a> </li>
+          <li class="link"><a href="cairo.html" target="_parent" class="boors">Cairo</a> </li>
+          <li class="link"><a href="Aswan.html" target="_parent" class="boors">Aswan</a> </li>
+          <li class="link"><a href="gouna.html" target="_parent" class="boors">Gouna</a> </li>
+          <li class="link"><a href="luxor.html" target="_parent" class="boors">Luxor</a> </li>
+        </ul>
+    </div>
+      <div class="sidebar2l">
+        <button class="open" onclick="side_open()">☰</button>
+      </div>
+    </div>
+    <div class="alex">
+      <img src="images/pexels-rewan-ahmed-312591219-17408308.jpg" alt="alex">
+      <div class="overlay"></div>
+      <div class="text">Alexandria</div>
+    </div>
+    <div class="info1">
+      <h2>Alexandria</h2>
+      <p>The Pearl of the Mediterranean has an ambiance more in keeping with its 
+        neighbors to the north than with those in the Middle East. Site of Pharos 
+        lighthouse, one of the Wonders of the World, and of Anthony and Cleopatra’s
+        tempestuous romance, the city was founded by Alexander the Great in 331 BCE.
+        Today, Alexandria offers fascinating insights into its proud Greek past, as 
+        well as interesting mosques, the casino strip of the Corniche, some lovely 
+        gardens and both modern and traditional hotels</p>
+    </div>
+    <div class="info2">
+      <h2 class="visit"> places to visit in Alex</h2>
+      <div class="place">
+        <img src="images/WhatsApp Image 2024-04-29 at 4.54.40 PM.jpeg" alt="bibliotheca in alex">
+        <div class="plac">
+          <h2>Bibliotheca Alexandria</h2>
+          <p>The biggest libirary in Egypt, it contains 8 million books in different languages. </p>
+        </div>
+      </div>
+      <div class="place">
+        <img src="images/pexels-ahmed-zaki-173186242-15357310.jpg" alt="fort qaitbey">
+        <div class="plac">
+          <h2>Fort Qaitbey</h2>
+          <p>Qaitbay Citadel is one of the most important forts on the coast of the Mediterranean Sea.</p>
+        </div>
+      </div>
+      <div class="place">
+        <img src="images/WhatsApp Image 2024-04-29 at 4.54.44 PM (1).jpeg" alt="Ancient Roman Amphitheater">
+        <div class="plac">
+          <h2> Roman Amphitheater</h2>
+          <p>Built in the 2nd century AD,it has 13 semicircular tiers made of white and gray marble.</p>
+        </div>
+      </div>
+      <div class="place">
+        <img src="images/WhatsApp Image 2024-04-29 at 10.05.35 PM.jpeg" alt="Montazah Gardens">
+        <div class="plac">
+          <h2>Montazah Gardens</h2>
+          <p>Royal gardens of King Faruk in the egyptian kingdom. The king was the last Egyptian monarch,</p>
+        </div>
+      </div>
+      <div class="place">
+        <img src="images/alex2.jpg" alt="St. Mina Monastery">
+        <div class="plac">
+          <h2>St. Mina Monastery</h2>
+          <p>It is the largest Coptic monastery in Egypt, by the way. Which means it is the largest in the world.</p>
+        </div>
+      </div>
+      <div class="place">
+        <img src="images/WhatsApp Image 2024-04-14 at 7.14.36 PM.jpeg" alt="Alexandria">
+        <div class="plac">
+          <h2>Corniche</h2>
+          <p>The Corniche is a glorious 3km walkway along the harbour dotted with restaurants.</p>
+        </div>
+      </div>
+    </div>
+    <div class="activities">
+      <h2 class="act">Activities in Alexandria </h2>
+      <ol>
+        <li>Catch different types of fish and seafood.</li>
+        <li>Eat the traditional food there especially sea food.</li>
+        <li>Take photos in the streets and beside the sea.</li>
+        <li>Take a yacht to relax and have much fun in the sea.</li>
+      </ol>
+    </div>
+    <footer id="footer" class="footer">
+      <a class="foot" href="home.html" id="logo">Travel</a>
+      <h3 class="footh">Explore Other Cities within Egypt:</h3>
+      <ul>
+          <a href="cairo.html">Cairo</a>
+          <a href="Aswan.html">Aswan</a>
+          <a href="alex.html">Alexandria</a>
+          <a href="gouna.html">Gouna</a>
+          <a href="luxor.html">Luxor</a>
+      </ul>
+    </footer> 
+  </body>
+</html>

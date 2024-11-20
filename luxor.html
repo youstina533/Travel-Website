@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="tourism web page">
+    <title>Luxor</title>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="css/luxor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function side_open() {
+        console.log("Opening sidebar");
+      }
+      function side_open() {
+       document.getElementById("mySidebar").style.display = "block";
+      } 
+      function side_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="import">
+     <div class="search">
+      <span class="search-icon material-symbols-outlin">search</span>
+      <input class="search-input" type="search" placeholder="search">
+     </div>
+      <a href="home.html" target="_parent" id="home">Travel</a>
+        <a href="sevices.html" target="_parent" id="linkLog">Log in & Sign up</a>
+        <div class="sidebar1" style="display: none;" id="mySidebar">
+        <button onclick="side_close()" class="close">close &times;</button>
+        <ul id="side">
+          <li class="link"><a href="alex.html" target="_parent" class="boors">Alexandria</a> </li>
+          <li class="link"><a href="cairo.html" target="_parent" class="boors">Cairo</a> </li>
+          <li class="link"><a href="Aswan.html" target="_parent" class="boors">Aswan</a> </li>
+          <li class="link"><a href="gouna.html" target="_parent" class="boors">Gouna</a> </li>
+          <li class="link"><a href="luxor.html" target="_parent" class="boors">Luxor</a> </li>
+        </ul>
+    </div>
+      <div class="sidebar2l">
+        <button class="open" onclick="side_open()">☰</button>
+      </div>
+    </div>
+    <div class="luxor">
+      <h2 class="lu">Luxor</h2>
+      <p>Luxor has frequently been characterized as the "world's greatest open-air museum"
+        , as the ruins of the Egyptian temple complexes at Karnak and Luxor stand within
+        the modern city. Immediately opposite, across the River Nile, lie the monuments,
+        temples and tombs of the west bank Theban Necropolis, which includes the Valley
+        of the Kings and Valley of the Queens. Thousands of tourists from all around the 
+        world arrive annually to visit Luxor's monuments and to know about the Pharos
+        which are the builders of the most incredible civilization,Luxor[a] is a city
+        in Upper Egypt, which includes the site of the Ancient Egyptian city of Thebes.
+        Luxor had a population of 1,333,309 in 2020,[2] with an area of approximately 417 km2 (161 sq mi)[1] and
+        is the capital of the Luxor Governorate. It is among the oldest inhabited cities in the world. </p>
+      <img src="images/pexels-axp-photography-500641970-18934705.jpg" alt="luxor">
+    </div>
+    <div class="magic">
+        <h2 class="wow">The origin of civilization</h2>
+        <p>Here you will know the achievements of our Egyptian nation. </p>
+        <div class="Pharos">
+            <img src="images/pexels-axp-photography-500641970-18934678.jpg" alt="Valley of the Kings">
+            <h2 class="phar">Valley of the Kings</h2>
+            <p>This desert valley contains the ancient burial ground of many Egyptian pharaohs. 
+            Among over 60 royal tombs is the famous Tomb of Tutankhamen that was found in pristine condition.</p>
+        </div>
+        <div class="Pharos">
+            <img src="images/pexels-axp-photography-500641970-16535883.jpg" alt="Luxor Temple">
+            <h2 class="phar">Luxor Temple</h2>
+            <p>A temple is a large Ancient Egyptian temple complex located on the east bank of 
+            the Nile River in the city, The temple built for the ritual practices exercised at the most important Ancient Egyptian 
+            festival, The Festival of Opet.</p>
+        </div>
+        <div class="Pharos">
+            <img src="images/WhatsApp Image 2024-04-29 at 4.38.31 PM.jpeg" alt="Temple of Hatshepsut">
+            <h2 class="phar">Temple of Hatshepsut</h2>
+            <p>A mortuary temple dedicated to the longest ruling female of Ancient Egypt,
+            Queen Hatshepsut. The temple is decorated with statues, sphinxes, and reliefs,
+            which have been meticulously restored over time.</p>
+        </div>
+        <div class="Pharos">
+            <img src="images/luxor1.jpg" alt="Tomb of King Tutankhamun">
+            <h2 class="phar">Tomb of King Tutankhamun</h2>
+            <p>The tomb of King Tut was discovered in the Valley of the Kings in 1922
+            by Howard Carter and Lord Carnarvon.The tomb consists of four chambers and an
+            entrance staircase and corridor</p>
+        </div>
+        <div class="Pharos">
+            <img src="images/luxor2.jpg" alt="Tomb of Queen Nefertari">
+            <h2 class="phar">Tomb of Queen Nefertari</h2>
+            <p>Nefertari, which means "beautiful companion", was Ramesses II's favorite wife.
+            In the Valley of the Queens, Nefertari's tomb once held the mummified body and 
+            representative symbolisms of her, consistent with most Egyptian tombs of the period
+            </p>
+        </div>
+        <div class="Pharos">
+            <img src="images/pexels-axp-photography-500641970-18934604.jpg" alt="Karnak temple">
+            <h2 class="phar">Alkarnak temple</h2>
+            <p>The complex is a vast open site and includes the Karnak Open Air Museum. It is believed to 
+            be the second most visited historical site in Egypt.It consists of four main parts,
+            of which only the largest is currently open to the public.</p>
+        </div>
+    </div>
+    <div class="vid">
+      <h2>The magic of Egypt</h2>
+      <video width="100%" height="570px"controls  autoplay muted>
+        <source src="audios/WhatsApp Video 2024-04-29 at 10.58.27 PM.mp4" type="video/mp4">
+        <source src="audios/WhatsApp Video 2024-04-29 at 10.58.27 PM.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <footer id="footer" class="footer">
+      <a class="foot" href="home.html" id="logo">Travel</a>
+      <h3 class="footh">Explore Other Cities within Egypt:</h3>
+      <ul>
+        <a href="cairo.html">Cairo</a>
+        <a href="Aswan.html">Aswan</a>
+        <a href="alex.html">Alexandria</a>
+        <a href="gouna.html">Gouna</a>
+        <a href="luxor.html">Luxor</a>
+      </ul>
+    </footer> 
+  </body>
+</html>
+
+    

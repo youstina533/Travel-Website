@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="tourism web page">
+    <title>Aswan</title>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="css/Aswan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function side_open() {
+        console.log("Opening sidebar");
+      }
+      function side_open() {
+       document.getElementById("mySidebar").style.display = "block";
+      } 
+      function side_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="import">
+     <div class="search">
+      <span class="search-icon material-symbols-outlin">search</span>
+      <input class="search-input" type="search" placeholder="search">
+     </div>
+      <a href="home.html" target="_parent" id="home">Travel</a>
+        <a href="sevices.html" target="_parent" id="linkLog">Log in & Sign up</a>
+        <div class="sidebar1" style="display: none;" id="mySidebar">
+        <button onclick="side_close()" class="close">close &times;</button>
+        <ul id="side">
+          <li class="link"><a href="alex.html" target="_parent" class="boors">Alexandria</a> </li>
+          <li class="link"><a href="cairo.html" target="_parent" class="boors">Cairo</a> </li>
+          <li class="link"><a href="Aswan.html" target="_parent" class="boors">Aswan</a> </li>
+          <li class="link"><a href="gouna.html" target="_parent" class="boors">Gouna</a> </li>
+          <li class="link"><a href="luxor.html" target="_parent" class="boors">Luxor</a> </li>
+        </ul>
+    </div>
+      <div class="sidebar2l">
+        <button class="open" onclick="side_open()">☰</button>
+      </div>
+    </div>
+    <div class="aswan">
+      <img src="images/pexels-axp-photography-500641970-18934581.jpg" alt="aswan">
+      <div class="back-ground1"></div>
+      <div class="asw">
+        <h2>Aswan</h2>
+        <h3>The home of Pharos</h3>
+        <p>Aswan is a busy market and tourist centre located just north of the Aswan Dam 
+        on the east bank of the Nile at the first cataract. The modern city has expanded
+        and includes the formerly separate community on the island of Elephantine.</p>
+      </div>
+    </div>
+    <div class="aswa">
+      <h2 class="places">Places to visit in Aswan, Egypt</h2>
+      <div class="ph">
+        <img src="images/pexels-ozgomz-1755390.jpg" alt="The Nile">
+        <div class="text">
+          <h2>The Nile</h2>
+        </div>
+      </div>
+      <div class="ph">
+        <img src="images/WhatsApp Image 2024-04-29 at 4.38.32 PM (1).jpeg" alt="Temple of Abu Simple">
+        <div class="text">
+          <h2>Abu Simple's temple</h2>
+        </div>
+      </div> 
+      <div class="ph">
+        <img src="images/pexels-ladfury-3091121.jpg" alt="The Ballons">
+        <div class="text">
+          <h2>The Ballons</h2>
+        </div>
+      </div>  
+      <div class="ph">
+        <img src="images/pexels-axp-photography-500641970-18991507.jpg" alt="Temple of Philae">
+        <div class="text">
+          <h2>Philae's temple</h2>
+        </div>
+      </div>
+    </div>
+    <div class="home">
+      <h2>The Houses in Aswan</h2>
+      <img src="images/pexels-axp-photography-500641970-18991593.jpg" alt="houses">
+      <p>The house are designed as the nubian style, they are coloerd with alot of colours and have 
+      wonderful shapes on them to give you relaxition and joy. Also there are Mummified crocodiles
+      are putted on their houses because of crocodiles are present in The Nile. It's a good feeling to live 
+      and see this culture that includes alot of joy and power.
+      </p>
+    </div>
+    <div class="giza">
+      <h2>The rest of the civilization</h2>
+      <div class="back-ground2"></div>
+      <img src="images/WhatsApp Image 2024-04-14 at 7.12.45 PM - Copy.jpeg" alt="Pyramids">
+      <p>The Egyptian civilization is in all parts of Egypt, every governorate has it's culture and habbits 
+      but all of them are from our grandparents "The Pharos", now you can see a part from this civilization in Giza 
+      , one from the seven wonders of the world "The Pyramids in Giza ".
+      </p>
+    </div>
+    <footer id="footer" class="footer">
+      <a class="foot" href="home.html" id="logo">Travel</a>
+      <h3 class="footh">Explore Other Cities within Egypt:</h3>
+      <ul>
+        <a href="cairo.html">Cairo</a>
+        <a href="Aswan.html">Aswan</a>
+        <a href="alex.html">Alexandria</a>
+        <a href="gouna.html">Gouna</a>
+        <a href="luxor.html">Luxor</a>
+      </ul>
+    </footer> 
+  </body>
+</html>
